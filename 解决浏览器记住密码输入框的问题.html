@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>解决浏览器记住密码输入框问题</title>
+    <style>
+        .hiddenInput {
+            width: 0;
+            height: 0;
+            float: left;
+            visibility: hidden
+        }
+        .hiddenForm{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 额外增加的内容 -->
+<form class="hiddenForm">
+    <input type="password"/>
+</form>
+<input type="password" class="hiddenInput"/>
+<!-- 原先的input -->
+<input type="password" name="pwd"/>
+
+</body>
+</html>
